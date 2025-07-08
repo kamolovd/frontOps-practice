@@ -1,13 +1,14 @@
 name: CI
 
-permissions:
-  contents: write
 
 on:
   push:
     branches: ['main'] 
   pull_request:
     branches: ['**']
+    
+permissions:
+  contents: write
 
 jobs:
   build-and-test:
