@@ -1,11 +1,12 @@
 import './App.css'
-import { Button } from './components'
+import { CounterButton } from './components'
 
 function App() {
 
   return (
     <>
-     <Button>xaxaxa</Button>
+      <h1>Welcome</h1>
+      <CounterButton />
     </>
   )
 }
