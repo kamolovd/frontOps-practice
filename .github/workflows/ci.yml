@@ -73,7 +73,7 @@ jobs:
       - name: Wait for server to be ready
         uses: jakejarvis/wait-action@v0.1.0
         with:
-          url: 'http://localhost:4173'
+          url: 'http://localhost:4173/frontOps-practice/'
           timeout: '60'
 
       - name: Run Cypress tests
