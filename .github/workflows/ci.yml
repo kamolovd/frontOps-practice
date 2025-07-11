@@ -61,21 +61,16 @@ jobs:
     needs: build
     steps:
       - uses: actions/checkout@v3
-
       - uses: actions/setup-node@v3
         with:
           node-version: 22
-
       - run: npm i
-
       - run: npm run preview &
-      
       - name: Wait for server to be ready
         uses: jakejarvis/wait-action@v0.1.0
         with:
           url: 'http://localhost:4173/frontOps-practice/'
           timeout: '60'
-
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
         with:
